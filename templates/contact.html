@@ -1,0 +1,39 @@
+{% extends 'layouts/base.html' %}
+
+
+{% block title %} Contacto {% endblock %}
+
+
+{% block content %}
+
+<h1>Contactos:</h1>
+<br/>
+<br/>
+
+<h2>Redes Sociales:
+</h2>
+<h3><a href="https://instagram.com/apacharata?igshid=YmMyMTA2M2Y=">Instagram</a><br/>
+    <a href="https://www.facebook.com/apachprotanimales.charata">Facebook</a><br/>
+    <a href="apacharata@hotmail.com">Mail</a>
+    
+
+</h3>
+<br/>
+<br/>
+
+<h2>Teléfono:
+</h2>
+<h3>3731 - 439977
+</h3>
+<br/>
+<br/>
+
+<h2>Uno de nuestros objetivos principales es educar en el respeto y con la dignidad<br/>
+    que merecen ser tratados todos los animales como individuos sintientes.<br/>
+    Es por ello que pedimos su colaboración en caso de que usted haya visto<br/>
+    algúna situación de maltrato animal. Haga click en "<a href="{% url 'creacion_denuncia' %}">Realizar Denuncia</a></li>" para dejar<br/>
+    su aporte en la denuncia del maltrato animal.
+</h2>
+<br/>
+<br/>
+{% endblock %}

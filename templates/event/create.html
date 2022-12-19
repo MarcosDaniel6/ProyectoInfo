@@ -1,0 +1,21 @@
+{% extends 'layouts/base.html' %}
+
+
+{% block title %}Crear Evento {% endblock %}
+
+{% block content %}
+
+
+<span><a href="{% url 'event' %}">Volver atrás</a></span>
+
+<form action="{% url 'event_create' %}" method="POST">
+    {% csrf_token %}
+    
+    <table>
+        {{ form.as_table }}
+    </table>
+    
+    <input type="submit" value="Crear">
+</form>
+
+{% endblock %}

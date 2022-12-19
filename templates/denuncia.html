@@ -1,0 +1,35 @@
+{% extends 'layouts/base.html' %}
+
+
+{% block title %} Contacto {% endblock %}
+
+
+{% block content %}
+
+<h1> Formulario </h1>
+<h2>
+    Advertimos al lector que este no es un formulario de denuncia oficial
+    sobre el maltrato animal, este formulario es solo
+    a modo de recopilación de datos.<br/>
+    Por favor, le pedimos que complete el siguiente formulario con total
+    seriedad y honestidad, ya que los datos brindados se tendrán en 
+    cuenta para la realización de futuras encuestas y estadísticas.<br/>
+</h2>
+<br/>
+<br/>
+<head>
+    <body>
+        <form method ="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <hr/>
+            <input type="submit" value="Enviar"/>
+        </form>
+        <br/>
+        
+    <h4><a class="boton" href="{% url 'denunciaformal' %}">Saltar formulario</a></h4>
+    <br/>
+    <br/>
+    </body>
+</head>
+{% endblock %}
